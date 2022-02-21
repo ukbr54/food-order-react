@@ -12,3 +12,12 @@ body {
   margin: 0;
   background-color: #3f3f3f;
 }
+
+.app {
+  width: 90%;
+  max-width: 43rem;
+  padding: 5rem;
+  border-radius: 12px;
+  background-color: white;
+  margin: 3rem auto;
+}
