@@ -19,19 +19,18 @@ function App() {
   }
 
   return (
-    <React.Fragment>
-      <div className="app">
-        <BasicForm />
-      </div>
-      <CartProvider>
-        {cartIsShown && <Cart onClose={hideCartHandler} />}
-        <Header onShowCart={showCartHandler} />
-        <main>
-          <Meals />
-        </main>
-      </CartProvider>
-    </React.Fragment>
-
+    /* <React.Fragment>
+       <div className="app">
+         <BasicForm />
+       </div>
+     </React.Fragment> */
+    <CartProvider>
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Header onShowCart={showCartHandler} />
+      <main>
+        <Meals />
+      </main>
+    </CartProvider>
   );
 }
 
